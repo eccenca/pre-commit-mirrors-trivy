@@ -1,6 +1,6 @@
-[![build status](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml)
+[![build status](https://github.com/eccenca/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/eccenca/pre-commit-mirrors-trivy/actions/workflows/main.yml)
 
-# trivy-py
+# trivy_py_ecc
 
 A python wrapper to provide a pip-installable [trivy] binary.
 
@@ -10,7 +10,7 @@ trivy binary for your particular platform.
 ### installation
 
 ```bash
-pip install trivy-py
+pip install trivy_py_ecc
 ```
 
 ### usage
@@ -24,8 +24,8 @@ See [pre-commit] for instructions
 
 Sample `.pre-commit-config.yaml`:
 ```yaml
-- repo: https://github.com/GaukeT/pre-commit-mirrors-trivy
-  rev: v0.67.2
+- repo: https://github.com/eccenca/pre-commit-mirrors-trivy
+  rev: v0.67.2.2
   hooks:
     - id: trivy-fs
       args:
