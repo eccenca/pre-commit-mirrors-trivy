@@ -15,6 +15,9 @@ else:
 
         def get_tag(self):
             _, _, plat = orig_bdist_wheel.get_tag(self)
+            # Convert linux tags to manylinux tags for PyPI compatibility
+            if plat.startswith('linux'):
+                plat = plat.replace('linux', 'manylinux2014')
             # We don't contain any python source, nor any python extensions
             return 'py2.py3', 'none', plat
 
