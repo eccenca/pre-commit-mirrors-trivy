@@ -19,8 +19,8 @@ The entire mechanism lives in two declarative files — there is no runtime Pyth
 - **`setup.cfg`** — the heart of the project. The `[setuptools_download]` section declares one `[trivy]`
   download entry per platform (Linux x86_64/aarch64/armv7l, macOS arm64/x86_64, Windows). Each entry pins a
   release `url`, a `sha256` checksum, and an `extract_path`. The `marker` lines select which binary installs
-  on a given platform. The package version in `[metadata]` (e.g. `0.70.0.1`) encodes the wrapped Trivy
-  version `0.70.0` plus a wrapper revision suffix.
+  on a given platform. The package version in `[metadata]` (e.g. `0.73.0.1`) encodes the wrapped Trivy
+  version `0.73.0` plus a wrapper revision suffix.
 - **`setup.py`** — only customizes wheel building: a `bdist_wheel` subclass marks the wheel as non-pure
   (platform-specific) and rewrites `linux` platform tags to `manylinux2014` for PyPI compatibility. The
   `py2.py3` / `none` tag reflects that the wheel carries a binary, not Python code.
