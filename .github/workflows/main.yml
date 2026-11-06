@@ -32,4 +32,5 @@ jobs:
     uses: asottile/workflows/.github/workflows/tox.yml@v1.8.1
     with:
       env: '["py39"]'
-      os: ubuntu-latest
+      # pinned: python 3.9 is not built for ubuntu-latest (26.04)
+      os: ubuntu-24.04

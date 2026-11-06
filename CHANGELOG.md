@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Publish workflow now builds with Python 3.13; Python 3.9 is no longer available on `ubuntu-latest`
+- CI linux job pinned to `ubuntu-24.04`; Python 3.9 is not built for `ubuntu-latest` (26.04)
 
 ## [0.76.0.1] - 2026-10-17
 
