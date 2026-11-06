@@ -25,7 +25,7 @@ See [pre-commit] for instructions
 Sample `.pre-commit-config.yaml`:
 ```yaml
 - repo: https://github.com/eccenca/pre-commit-mirrors-trivy
-  rev: v0.76.0.1
+  rev: v0.76.2.1
   hooks:
     - id: trivy-fs
       args:
